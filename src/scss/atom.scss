@@ -1,0 +1,56 @@
+$black: #08020D;
+$light: #E0E0E0;
+$dark-light: #CACACA;
+$dark: #3C3B3D;
+$green: #34C176;
+$orange: #F89202;
+$peorple: #5328A1;
+$brown: #95390C;
+
+@font-face {
+    font-weight: 400;
+    font-family: 'Roboto';
+    src: url(../src/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'Roboto';
+    src: url(../src/fonts/Roboto-Regular.ttf);
+}
+
+@mixin h($size, $lineheight) {
+    font-size: $size;
+    line-height: $lineheight;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: $dark-light;
+    background-color: $black;
+    margin: 0;
+}
+
+h1 {
+    @include h(60px, 90px);
+}
+
+h2 {
+    @include h(38px, 57px);
+}
+
+@media (max-width: 414px) {
+    h1 {
+        @include h(30px, 45px); 
+    }
+    h2 {
+        @include h(18px, 27px); 
+    }
+}
