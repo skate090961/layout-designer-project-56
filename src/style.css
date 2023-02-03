@@ -6,7 +6,7 @@
 @font-face {
   font-weight: 700;
   font-family: "Roboto";
-  src: url(../src/fonts/Roboto-Regular.ttf);
+  src: url(../src/fonts/Roboto-Bold.ttf);
 }
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-  color: #CACACA;
+  color: white;
   background-color: #08020D;
   margin: 0;
 }
@@ -23,29 +23,194 @@ body {
 h1 {
   font-size: 60px;
   line-height: 90px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: 38px;
   line-height: 57px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 @media (max-width: 414px) {
+  .container {
+    padding: 20px;
+  }
   h1 {
     font-size: 30px;
     line-height: 45px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
   }
   h2 {
     font-size: 18px;
     line-height: 27px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 25px;
+}
+
+.header__body {
+  padding: 200px 0;
+}
+
+.header__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 570px;
+}
+
+.form__input_text {
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #CACACA;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.form__input_text::placeholder {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.form__btn {
+  flex: 1 1 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #34C176;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+}
+
+.logo__text {
+  margin: 3px 0 0 16px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+
+.menu__link {
+  color: #CACACA;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.menu__link:hover {
+  color: white;
+}
+
+.header__search {
+  border: none;
+  border-radius: 50px;
+  background-color: #3C3B3D;
+  padding: 5px 0 5px 10px;
+}
+
+.header__search::placeholder {
+  text-transform: uppercase;
+}
+
+.header__title {
+  margin: 0;
+}
+
+.header__subtitle {
+  margin-top: 0;
+}
+
+.logo__img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 90px;
+}
+
+.menu__list:not(:first-child) {
+  margin-left: 24px;
+}
+
+.header {
+  background-image: url("../src/images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 414px) {
+  .header__body {
+    padding: 250px 0 200px;
+  }
+  .header__form {
+    max-width: 374px;
+  }
+  .form__input_text {
+    flex: 1 1 100%;
+  }
+  .header__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .menu__list:not(:first-child) {
+    margin-left: 0;
+  }
+  .menu__list:first-child {
+    margin-top: 17px;
+  }
+  .header__search {
+    margin-top: 18px;
+    width: 370px;
+  }
+  .menu__item {
+    line-height: 13px;
+  }
+  .header__header {
+    width: 374px;
   }
 }
 
