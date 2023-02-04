@@ -12,7 +12,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    color: $dark-light;
+    color: white;
     background-color: $black;
     margin: 0
 }
@@ -55,3 +55,9 @@ a {
     text-align: center;
 }
 
+.btn {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border-radius: 5px;
+}

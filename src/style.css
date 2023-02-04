@@ -15,7 +15,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-  color: #CACACA;
+  color: white;
   background-color: #08020D;
   margin: 0;
 }
@@ -68,6 +68,13 @@ a {
   text-align: center;
 }
 
+.btn {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
 .header__header {
   display: flex;
   align-items: center;
@@ -105,11 +112,7 @@ a {
 
 .form__btn {
   flex: 1 1 100%;
-  padding: 20px 30px;
-  border-radius: 5px;
   background-color: #34C176;
-  color: #FFFFFF;
-  text-transform: uppercase;
   border: none;
 }
 
@@ -217,6 +220,106 @@ a {
   .header__header {
     width: 374px;
   }
+}
+.pricing__section {
+  padding-top: 100px;
+}
+
+.pricing__title {
+  margin: 0;
+}
+
+.card {
+  margin-top: 45px;
+  padding: 0 1.5rem;
+  padding-bottom: 64px;
+  border-radius: 1rem;
+  flex: 1 1 30%;
+  height: 615px;
+}
+
+.card:not(:first-child) {
+  margin-left: 50px;
+}
+
+.value__box {
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.card__title {
+  margin-top: 24px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.value__amount {
+  font-size: 64px;
+  margin: 0;
+  line-height: 1em;
+}
+
+.value__currency {
+  display: inline-block;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+
+.card__btn {
+  display: block;
+  margin-top: 40px;
+  border: 1px solid #FFFFFF;
+}
+
+.card__footer {
+  font-size: 13px;
+  margin-top: 64px;
+  margin-bottom: 0;
+}
+
+.pricing__flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bg-free {
+  background-image: url("./images/subscribe_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-standart {
+  background-image: url("./images/subscribe_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("./images/subscribe_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 414px) {
+  .card:not(:first-child) {
+    margin-left: 0;
+  }
+  .card:first-child {
+    margin-top: 50px;
+  }
+  .card__title {
+    font-size: 16px;
+  }
+  .card__title {
+    margin-top: 16px;
+  }
+}
+.pricing__description {
+  margin-top: 43px;
 }
 
 /*# sourceMappingURL=style.css.map */
