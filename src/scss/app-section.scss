@@ -1,0 +1,52 @@
+.app__section {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.app__title {
+    margin: 0;
+}
+
+.app__text {
+    color: $dark-light;
+    text-align: left;
+}
+
+.app__btn {
+    color: white;
+    display: block;
+    background-color: $brown;
+    border-radius: 32px;
+    padding: 16px 40px;
+    font-size: 12.8px;
+    width: 131px;
+}
+
+.app__container {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app__body {
+    padding-right: 144px;
+    flex: 1 1 50%;
+}
+
+.app__img {
+    padding-right: 144px;
+}
+
+@media (max-width: 414px) {
+    .app__container {
+        flex-direction: column-reverse;
+    }
+    .app__img {
+        padding-right: 0;
+        width: 333px;
+        margin: 0 auto;
+    }
+    .app__body {
+        padding-right: 0;
+    }
+}
