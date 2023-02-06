@@ -579,5 +579,60 @@ a {
     margin-top: 16px;
   }
 }
+.header__catalog {
+  background-image: url("../src/images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__catalog {
+  text-align: left;
+}
+
+.btn__flex {
+  margin-top: 48px;
+}
+
+.btn__peorple {
+  background-color: #5328A1;
+}
+
+.btn__brown {
+  background-color: #95390C;
+}
+
+.btn__img {
+  filter: invert(1);
+  width: 20px;
+}
+
+.catalog__btn {
+  display: flex;
+  border: none;
+  padding: 20px 30px;
+  width: 200px;
+  font-size: 12.8px;
+  align-items: center;
+}
+
+.catalog__btn:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.btn__flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn__text {
+  margin: 0 0 0 16px;
+}
+
+@media (max-width: 414px) {
+  .catalog__btn:not(:first-child) {
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
