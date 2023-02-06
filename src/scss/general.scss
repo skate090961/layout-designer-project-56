@@ -5,6 +5,14 @@
     text-transform: uppercase;
 }
 
+@mixin padding($vertical, $horizontal) {
+    padding: $vertical $horizontal;
+}
+
+@mixin margin-top($top) {
+    margin-top: $top;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -58,6 +66,9 @@ a {
 .btn {
     color: #FFFFFF;
     text-transform: uppercase;
-    padding: 20px 30px;
     border-radius: 5px;
+}
+
+.p-100 {
+    padding-top: 100px;
 }

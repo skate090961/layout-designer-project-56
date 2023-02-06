@@ -1,13 +1,9 @@
-.pricing__section {
-    padding-top: 100px;
-}
-
 .pricing__title {
     margin: 0;
 }
 
 .card {
-    margin-top: 45px;
+    margin-top: 48px;
     padding: 0 1.5rem;
     padding-bottom: 64px;
     border-radius: 1rem;
@@ -52,6 +48,7 @@
     display: block;
     margin-top: 40px;
     border: 1px solid #FFFFFF;
+    @include padding(20px, 30px);
 }
 
 .card__footer {

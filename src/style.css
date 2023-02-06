@@ -71,8 +71,11 @@ a {
 .btn {
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 20px 30px;
   border-radius: 5px;
+}
+
+.p-100 {
+  padding-top: 100px;
 }
 
 .header__header {
@@ -114,6 +117,7 @@ a {
   flex: 1 1 100%;
   background-color: #34C176;
   border: none;
+  padding: 20px 30px;
 }
 
 .logo__text {
@@ -221,16 +225,12 @@ a {
     width: 374px;
   }
 }
-.pricing__section {
-  padding-top: 100px;
-}
-
 .pricing__title {
   margin: 0;
 }
 
 .card {
-  margin-top: 45px;
+  margin-top: 48px;
   padding: 0 1.5rem;
   padding-bottom: 64px;
   border-radius: 1rem;
@@ -273,6 +273,7 @@ a {
   display: block;
   margin-top: 40px;
   border: 1px solid #FFFFFF;
+  padding: 20px 30px;
 }
 
 .card__footer {
@@ -320,6 +321,115 @@ a {
 }
 .pricing__description {
   margin-top: 43px;
+}
+
+.news__img {
+  flex: 1 1 47%;
+  width: 575px;
+}
+
+.news__btn {
+  margin-top: 48px;
+  display: block;
+  padding: 16px 30px;
+  border: 1px solid #CACACA;
+  text-align: center;
+  width: 135px;
+  height: 53px;
+  font-size: 12px;
+  color: #CACACA;
+}
+
+.news__title {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.news__text {
+  color: #CACACA;
+  margin: 30px 0 0 0;
+}
+
+.news__footer {
+  margin-top: 25px;
+}
+
+.news__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news__item:first-of-type {
+  margin-top: 50px;
+}
+
+.news__item:not(:first-of-type) {
+  margin-top: 65px;
+}
+
+.news__container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: flex-start;
+  flex: 1 1 47%;
+  margin-left: 50px;
+}
+
+.news__author {
+  display: flex;
+}
+
+.img__author {
+  width: 19px;
+  height: 19px;
+}
+
+.news__logo {
+  color: #F89202;
+  text-transform: uppercase;
+  margin: 0 0 0 16px;
+  font-size: 12px;
+}
+
+.news__data {
+  color: #CACACA;
+  font-size: 12px;
+  margin: 0 0 0 16px;
+}
+
+.news__item:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.news__item:nth-of-type(even) .news__container {
+  margin-left: 0;
+  margin-right: 50px;
+}
+.news__item:nth-of-type(even) .news__footer {
+  margin-top: 15px;
+}
+
+@media (max-width: 414px) {
+  .news__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 50px;
+  }
+  .news__img {
+    width: 100%;
+  }
+  .news__text {
+    margin-top: 16px;
+    flex: 1 1 100%;
+  }
+  .news__container {
+    margin-left: 0;
+  }
+  .news__item:nth-of-type(even) .news__container {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
