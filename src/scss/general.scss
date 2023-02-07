@@ -34,9 +34,9 @@ h2 {
 }
 
 @media (max-width: 414px) {
-    .container {
-        padding: 0 40px;
-    }
+    // .container {
+    //     padding: 0 20px;
+    // }
 
     h1 {
         @include h(30px, 45px); 
