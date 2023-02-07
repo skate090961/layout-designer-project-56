@@ -703,5 +703,56 @@ a {
     margin-left: 0;
   }
 }
+.discography-section {
+  padding-top: 100px;
+}
+
+.discography__title {
+  margin: 0;
+}
+
+.discography__name {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.discography__year {
+  color: #E0E0E0;
+  margin: 0;
+}
+
+.discography__container {
+  margin-top: 23px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.discography__container .discography__item {
+  flex: 0 1 25%;
+  margin-top: 25px;
+}
+.discography__container .discography__item:not:nth-child(4n) {
+  margin-left: 50px;
+}
+
+.discography__img {
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+@media (max-width: 414px) {
+  .discography__img {
+    width: 137px;
+    height: 137px;
+  }
+  .discography__container .discography__item:nth-child(even) {
+    margin-left: 14px;
+  }
+  .discography__container .discography__item {
+    flex: 1 1 48%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
