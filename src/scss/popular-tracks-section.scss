@@ -40,13 +40,15 @@
 
 .popular-track {
     display: flex;
-    flex: 1 1 40%;
+    flex-wrap: wrap;
+    width: 550px;
     justify-content: start;
+    box-sizing: content-box;
 }
 
 .track__container {
     .popular-track:nth-child(even) {
-        margin-left: 50px;
+        padding-left: 50px;
     }
 }
 
@@ -68,7 +70,7 @@
 
     .track__container {
         .popular-track:nth-child(even) {
-            margin-left: 0;
+            padding-left: 0;
         }
     }
 }

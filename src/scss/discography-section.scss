@@ -23,14 +23,14 @@
     display: flex;
     flex-wrap: wrap;
 
-.discography__item {
-    flex: 0 1 25%;
+    .discography__item {
     margin-top: 25px;
-}
-
-    .discography__item:not:nth-child(4n) {
-        margin-left: 50px;
     }
+
+    .discography__item:not(:nth-child(4n + 1)) {
+        padding-left: 50px;
+    }
+
 }
 
 .discography__img {
@@ -44,14 +44,20 @@
         width: 137px;
         height: 137px;
     }
-
+    
     .discography__container {
-        .discography__item:nth-child(even) {
-            margin-left: 14px;
-        }
-
         .discography__item {
-            flex: 1 1 48%;
+            width: 137px;
+        }
+        .discography__item:not(:nth-child(4n + 1)) {
+            padding-left: 0;
+        }
+        .discography__item:nth-child(even) {
+            padding-left: 50px;
         }
     }
+}
+
+.similar__sub {
+    display: flex;
 }
