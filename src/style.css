@@ -146,6 +146,7 @@ a {
   border-radius: 50px;
   background-color: #3C3B3D;
   padding: 5px 0 5px 10px;
+  width: 248px;
 }
 
 .header__search::placeholder {
@@ -628,10 +629,18 @@ a {
   margin: 0 0 0 16px;
 }
 
+.p-250 {
+  padding-top: 250px;
+  padding-bottom: 223.5px;
+}
+
 @media (max-width: 414px) {
   .catalog__btn:not(:first-child) {
     margin-top: 1.5rem;
     margin-left: 0;
+  }
+  .header__body {
+    padding-top: 225px;
   }
 }
 .popular-track-section {

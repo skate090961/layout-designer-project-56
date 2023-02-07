@@ -43,9 +43,17 @@
     margin: 0 0 0 16px;
 }
 
+.p-250 {
+    padding-top: 250px;
+    padding-bottom: 223.5px;
+}
+
 @media (max-width: 414px) {
     .catalog__btn:not(:first-child) {
         margin-top: 1.5rem;
         margin-left: 0;
+    }
+    .header__body {
+        padding-top: 225px;
     }
 }
