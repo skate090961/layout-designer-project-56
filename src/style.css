@@ -63,7 +63,7 @@ a {
 
 .container {
   position: relative;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -187,7 +187,7 @@ a {
 }
 
 .header {
-  background-image: url("../src/images/banner.png");
+  background-image: url("./images/banner.png");
   background-position: center;
   background-size: cover;
 }
@@ -584,7 +584,7 @@ a {
   }
 }
 .header__catalog {
-  background-image: url("../src/images/Morten Harket.png");
+  background-image: url("./images/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
